@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Mejores_juegos_2019>
+    <juego1>
+        <título>Fortnite</título>
+         <puesto>1</puesto>
+         <editor>Epic Games</editor>
+         <genero>Shooter</genero>
+         <ingresos>1.8B</ingresos>
+    </juego1>
+
+     <juego2>
+        <título>Dungeon Fighter Online</título>
+         <puesto>2</puesto>
+         <editor>Nexon</editor>
+         <genero>RPG</genero>
+         <ingresos>1.6B</ingresos>
+    </juego2>
+
+     <juego3>
+        <título>Honour of Kings</título>
+         <puesto>3</puesto>
+         <editor>Tencent</editor>
+         <genero>MOBA</genero>
+         <ingresos>1.6B</ingresos>
+    </juego3>
+
+     <juego4>
+        <título>League of Legends</título>
+         <puesto>4</puesto>
+         <editor>Riot Games</editor>
+         <genero>MOBA</genero>
+         <ingresos>1.5B</ingresos>
+    </juego4>
+
+     <juego5>
+        <título>Candy Crush Saga</título>
+         <puesto>5</puesto>
+         <editor>KING</editor>
+         <genero>Puzzle</genero>
+         <ingresos>1.5B</ingresos>
+    </juego5>
+
+</Mejores_juegos_2019>

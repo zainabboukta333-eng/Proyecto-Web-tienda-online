@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo_zapatillas>
+
+    <zapatilla>
+        <nombre>converse</nombre>
+        <precio>70</precio>
+        <descripcion>Zapatillas altas con textura de tela. Suela ancha de goma</descripcion>
+        <color>blanco</color>
+    </zapatilla>
+
+    <zapatilla>
+        <nombre>vans</nombre>
+        <pre>90</pre>
+        <descripcion>Zapatillas bajas con suela ancha y textura de terciopelo</descripcion>
+        <color>Negro</color>
+    </zapatilla>
+
+    <zapatilla>
+        <nombre>Air force 1</nombre>
+        <precio>110</precio>
+        <Descripción>Zapatillas altura media y textura de cuero</Descripción>
+        <color>Gris</color>
+    </zapatilla>
+
+    <zapatilla>
+        <nombre>Jordan</nombre>
+        <precio>120</precio>
+        <descripcion>Zapatillas altas con textura de cuero</descripcion>
+        <color>Rojo</color>
+    </zapatilla>
+    
+    <zapatilla>
+        <nombre>Adidas</nombre>
+        <precio>85</precio>
+        <descripcion>Zapatillas abajas con velcro y textura de cuero</descripcion>
+        <color>verde</color>
+    </zapatilla>
+
+</catalogo_zapatillas>

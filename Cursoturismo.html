@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de turismo</title>
+</head>
+<body>
+    <h1><p style="color: rgb(0, 221, 147);">CURSO DE TURISMO</p></h1>
+<hr>
+
+<h2>Formulario de inscripción turismo</h2>
+<form action="" method="post">
+    <label for="suNombre">Nombre</label>
+    <input type="text" name="Nombre" id="suNombre" size="100" autocomplete="on">
+</form>
+
+<br>
+
+<form action="" method="post">
+    <label for="suApellido">Apellido</label>
+    <input type="text" name="Apellido" id="suApellido" size="100" autocomplete="on">
+</form>
+
+<br>
+
+<form action="" method="post">
+<label for="suDireccion">Dirección</label>
+<input type="text" name="Dirección" id="suDireccion" size="100" autocomplete="off" placeholder="Ej: calle, número de casa, ciudad..." disabled>
+</form>
+ 
+<br>
+
+<label for="suFechadeNacimiento">Fecha de nacimiento</label>
+<br>
+<input type="date" name="fecha_nacimiento" id="suFechadeNacimiento" size="50">
+
+<br>
+<br>
+
+<form action="" method="post">
+    <label for="suEmail">Email</label>
+    <input type="email" name="email" id="suEmail" size="100">
+</form>
+
+<h3>TIPO DE TURISMO</h3>
+<br>
+
+Escoge el tipo de turismo en el que te quieras especializar.
+<br>
+<input type="radio" name="tipo_turismo" id="nacional"> Turismo nacional
+<br>
+<input type="radio" name="tipo_turismo" id="internacional"> Turismo internacional
+<br>
+
+<h3>ASIGNATURAS PARA TURISMO NACIONAL</h3>
+
+<br>
+Escoge las asignaturas que desees cursar.
+<br>
+<input type="checkbox" name="asignatura1" value="Historia_nacional"> Historia nacional
+<br>
+<input type="checkbox" name="asignatura2" value="Cultura_nacional"> Cultura Historia nacional
+<br>
+<input type="checkbox" name="asignatura3" value="Gastronomía_nacional"> Gastronomia nacional
+<br>
+<input type="checkbox" name="asignatura4" value="Arquitectura_nacional"> Arquitectura nacional
+<br>
+<input type="checkbox" name="asignatura5" value="Ocio"> Ocio
+<br>
+<input type="checkbox" name="asignatura6" value="Prácticas"> Prácticas
+
+<h3>ASIGNATURAS PARA TURISMO INTERNACIONAL</h3>
+
+<br>
+Escoge las asignaturas que desees cursas
+<br>
+<input type="checkbox" name="asignatura1" value="Historia_internacional"> Historia internacional
+<br>
+<input type="checkbox" name="asignatura2" value="Cultura_internacional"> Cultura internacional I
+<br>
+<input type="checkbox" name="asignatura3" value="Cultura_internacional"> Cultura internacional II
+<br>
+<input type="checkbox" name="asignatura4" value="Arquitectura_internacional"> Arquitectura internacional
+<br>
+<input type="checkbox" name="asignatura5" value="Historia_arte"> Historia del arte
+<br>
+<input type="checkbox" name="asignatura6" value="Prácticas"> Prácticas
+<br>
+
+<h3>ASIGNACIÓN DE GRUPO</h3>
+<br>
+
+Escoge el grupo en el que desees matricularte.
+<br><br>
+<select name="Grupo">
+<option value="Mañana_A">Mañana A</option>
+<option value="Mañana_B">Mañana B</option>
+<option value="Tarde">Tarde</option>
+</select>
+<br>
+
+<h3>ARCHIVOS ADJUNTOS</h3>
+Es obligatorio adjuntar el DNI y una foto tamaño carnet.
+<br><br>
+Adjuntar archivo <input type="file" name="examinar[]" multiple>
+<hr>
+<input type="submit" name="enviar_datos" value="Enviar formulario">
+<br><br>
+<input type="reset" name="limpiar_campos" value="Resetear formulario">
+
+
+
+
+</body>
+</html>

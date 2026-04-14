@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mensaje>
+
+    <emisor>
+        <nombre>Carlos</nombre>
+        <email>carlos@secretaria.com</email>
+    </emisor>
+
+    <receptor>
+        <nombre>Alberto</nombre>
+        <email>alberto@profesor.com</email>
+    </receptor>
+
+    <asunto>Excursión</asunto>
+
+    <texto>
+        <párrafo>Hola, ¿qué tal?</párrafo>
+        <párrafo>Te escribo para confirmar la excursión del jueves</párrafo>
+        <párrafo>Un saludo.</párrafo>
+    </texto>
+    
+</mensaje>

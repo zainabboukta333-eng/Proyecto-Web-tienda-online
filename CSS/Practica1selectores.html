@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1 - Selectores</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+     h1 {
+            background: rgb(167, 5, 167);
+            color: white;
+            padding: 10px;
+        }
+        p{
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    
+        #titPrincipal
+        {
+            color: brown;
+            text-decoration: underline;  
+    }
+    
+        .destacado {
+            background: yellow;
+            font-weight: bold;
+    }
+        .borde {
+            border: 2px solid black;
+            padding: 8px;
+        }
+        
+            nav a, aside a{
+                color: mediumvioletred;
+                font-weight: bold;
+            }
+        #contenedor p{
+            color: #333;
+        }
+        
+        nav ul > li{
+        list-style: none;
+        margin: 20px 0;
+        }
+        
+        h3 + p {
+            font-style: italic;
+        }
+        h3 ~ a{
+            font-size: 14px;
+        }
+        a[target] {
+            color: red
+        }        
+        
+        a[target="_self"] {
+            background-color: lightyellow;
+        }
+        a:link {
+            color: blue;
+        }
+        a:visited {
+            color: blueviolet;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:active {
+            color: black;
+        }
+        input :focus{
+            border: 2px blue;
+        }
+        input :disabled{
+            background-color: grey;
+        }
+        input[type="checkbox"]:{checked + span 
+            color: green;
+            font-weight: bold;
+        }
+        aside ul li :first-child {
+            font-weight: bold;
+        }
+        aside ul li :last-child {
+            text-decoration: underline;
+        }
+        aside ul li :nth-child {
+            color: orange;
+        }
+        p:not(.destacado) {
+            line-height: 1.6; 
+        }
+        p::first-letter{
+            font-size: 30px;
+        }
+        p::first-line{
+            color: teal;
+        }
+        html {scroll-behavior: smooth;}
+    </style>
+
+</head>
+<body>
+    <header id="inicio">
+        <h1>BLOG DE MINI ARTÍCULOS</h1>
+        <p>Practicando selectores de CSS</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li><br>
+            <li><a href="#articulos">Articulos</a></li><br>
+            <li><a href="#contacto rápido">Contacto rápido</a></li><br>
+            <li><a href="#categorias">Categorias</a></li><br>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="articulos">
+            <h2 id="titPrincipal">Artículos</h2>
+            <div id="contenedor">
+
+            <article>
+                <h3>Articulo 1: Sectores básicos</h3>
+                <p class="destacado borde">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quae, qui earum iste officia incidunt ipsa aperiam, nostrum ex enim natus? Voluptatum maxime modi facilis harum eos repellat odio quaerat!</p>
+                <img src="https://picsum.photos/900/200" alt="Imagen de ejemplo">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum perspiciatis cupiditate voluptatum, ipsa cum fuga numquam blanditiis unde corrupti nesciunt nulla placeat dolores officiis minus praesentium recusandae suscipit in possimus?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis sequi repellat maxime laboriosam ipsum tenetur nesciunt tempore, molestias, quos doloremque quidem esse quod rerum harum incidunt fugiat ad! Optio, consectetur.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, aut molestias ducimus porro ipsam quis quos esse reprehenderit minima rerum numquam similique excepturi pariatur a. Beatae sit rem et quod.</p>
+                
+                <a href="#" target="_blank">Leer más</a>
+
+            </article>
+
+            <article>
+                <h3 class="destacado">Artículo 2: Selectores avanzados</h3>
+                <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, unde ullam repellat dolor deleniti incidunt ipsum laudantium adipisci animi perspiciatis, quos ipsa consequuntur nesciunt at facere blanditiis voluptates possimus minima.</i></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus repellat ut quia accusamus voluptates hic tempore rerum sit beatae ex accusantium recusandae exercitationem neque modi alias nisi, impedit aliquid ad?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates dolores accusamus mollitia tempore ipsam beatae repudiandae quas quam. Error omnis natus veritatis fugit alias optio amet hic quam exercitationem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsam sed molestias! Ipsum error quae, ipsam recusandae sunt fugit voluptatum molestiae, itaque doloribus saepe perferendis totam rerum, cum maiores harum.</p>
+    
+                <a href="#"target="_self">Leer más</a>
+            </article>
+
+            <article>
+                <h3>Artículo 3: Pseudo-clases y pseudo-elementos</h3>
+                <p class="destacado">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque adipisci placeat dolorum voluptas! Sit omnis dolore necessitatibus sequi, esse corrupti, recusandae voluptates explicabo enim tempora aperiam incidunt fuga quas ipsam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod mollitia fugit laboriosam necessitatibus, laborum nemo, doloribus aliquam, laudantium sed omnis cupiditate amet! Non reprehenderit quia vero? Labore cumque eveniet aperiam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum nihil numquam incidunt accusantium doloribus aperiam ab dicta quam. Nihil voluptate sunt pariatur magni ipsum quas numquam itaque. Fugit, laboriosam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, id, asperiores sed illum dignissimos voluptas quos soluta voluptates eligendi velit hic aliquam obcaecati, nulla possimus inventore deserunt doloremque odio corrupti!</p>
+
+                <a href="#">Leer más</a>
+            </article>
+
+            <section id="formulario">
+                <h2>Contacto rápido</h2>
+                <form action="">
+                    <label for="suNombre">Nombre:</label>
+                    <input type="text" id="suNombre">
+                    <br>
+                    <label for="suEmail">Email</label>
+                    <input type="text" id="suEmail">
+                    <br>
+                    <label for="deshabilitado">Campo</label>
+                    <input type="text" id="deshabilitado">
+                    <br>
+                    <input type="checkbox">
+                    <span>Acepto condiciones</span>
+                    <br>
+                    <button>Enviar</button>
+                    </form>
+
+                    <aside id="categorias">
+                        <h2>Categorías</h2>
+                        <ul>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                            <li>Prácticas</li>
+                            <li>Exámenes</li>
+                            <a href="#">Ver todas</a>
+                        </ul>
+                    </aside>
+
+                    <footer><p> &copy; 2026 - CEAC </p></footer>
+
+
+                
+
+            </section>
+
+
+
+
+            
+
+
+            </div>
+
+    
+
+
+    </main>
+
+</body>
+</html>
