@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Conjunto ligero y elegante</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Inicio</a> ||
+    <a href="sobrenosotros.html">Sobre Nosotros</a> ||
+    <a href="productos.html">Productos</a> ||
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<header>
+    <h1>Conjunto ligero y elegante</h1>
+    <p><i>Un conjunto delicado que combina fluidez y sofisticación en cada detalle.</i></p>
+</header>
+
+<section class="detalle del producto">
+    <div class="producto">
+        <img src="https://i.pinimg.com/736x/5f/85/8c/5f858c1366b3a60bcc38578ec9bddc48.jpg" width="300" height="400"     alt="imagen de vestido">
+</div>
+
+<div class="producto-info">
+        <h2>Conjunto veraniego</h2>
+        <p class="precio-detalle">30€</p>
+
+        <p class="descripcion">
+Un conjunto delicado que destaca por su fluidez y su diseño sofisticado.
+Perfecto para quienes buscan un look modesto y elegante, ofrece comodidad durante todo el día sin perder estilo. Ideal para eventos, cenas o cualquier ocasión especial.        <div class="tallas">
+    <p>Tallas disponibles:</p>
+
+    <div class="tallas-opciones">
+        <button class="talla">S</button>
+        <button class="talla">M</button>
+        <button class="talla">L</button>
+        <button class="talla">XL</button>
+    
+</div>
+
+        <a href="#" class="button carrito">Añadir al carrito</a>
+    </div>
+
+</section>
+
+<footer>
+    <p><small>&copy; 2026 Modest Collection by Wihad</small></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* =========================
+   1. RESET Y BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f7f4;
+    color: #333;
+}
+
+/* =========================
+   2. NAVBAR
+========================= */
+nav {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    color: #555;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b89b72;
+}
+
+/* =========================
+   3. HEADER
+========================= */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #b89b72;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+/* =========================
+   4. BENEFICIOS
+========================= */
+.beneficios {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.tarjetas {
+    margin-top: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    margin: 10px auto;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   5. HERO
+========================= */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+/* =========================
+   6. BOTÓN
+========================= */
+a[href="productos.html"] {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 12px 25px;
+    background-color: #b89b72;
+    color: white;
+    border-radius: 20px;
+}
+
+a[href="productos.html"]:hover {
+    background-color: #a1865f;
+}
+
+/* =========================
+   7. FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+}
