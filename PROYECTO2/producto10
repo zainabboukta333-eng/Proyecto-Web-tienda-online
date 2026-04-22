@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Conjunto ligero y elegante</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilo.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
@@ -19,6 +18,7 @@
 
 <header>
     <h1>Conjunto ligero y elegante</h1>
+    <hr>
     <p><i>Un conjunto delicado que combina fluidez y sofisticación en cada detalle.</i></p>
 </header>
 
@@ -50,7 +50,7 @@ Perfecto para quienes buscan un look modesto y elegante, ofrece comodidad durant
 </section>
 
 <footer>
-    <p><small>&copy; 2026 Modest Collection by Wihad</small></p>
+    <p><small>&copy; 2026 Ropa Modesta wihad.wear</small></p>
 </footer>
 
 </body>
