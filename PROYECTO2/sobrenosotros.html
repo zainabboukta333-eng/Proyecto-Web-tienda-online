@@ -27,27 +27,30 @@
         </ul>
     </nav>
 
-    <header style="padding: 100px 8%; text-align: center; background-color: var(--bg-alt);">
-        <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; letter-spacing: 3px; margin-bottom: 20px;" class="reveal">Nuestra Historia</h1>
-        <div class="divider" style="width: 60px; height: 2px; background: var(--primary); margin: 0 auto 30px;"></div>
-        <p style="max-width: 800px; margin: 0 auto; line-height: 1.8; color: var(--text-muted); font-size: 1.1rem;" class="reveal">
+    <header style="padding: 120px 8%; text-align: center; background-color: var(--bg-alt); position: relative; overflow: hidden;">
+        <div style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; border: 1px solid var(--primary-light); opacity: 0.1; transform: rotate(45deg);"></div>
+        <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 4rem; letter-spacing: 5px; margin-bottom: 20px;" class="reveal">Nuestra Historia</h1>
+        <div class="divider" style="width: 80px; height: 1px; background: var(--primary); margin: 0 auto 30px;"></div>
+        <p style="max-width: 800px; margin: 0 auto; line-height: 2; color: var(--text-muted); font-size: 1.1rem; letter-spacing: 0.5px;" class="reveal">
             Wihad Wear nace de la pasión por la elegancia discreta y la convicción de que la moda modesta es una expresión poderosa de identidad y confianza.
         </p>
     </header>
 
-    <main style="max-width: 1100px; margin: 0 auto; padding: 80px 20px;">
-        <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 60px; align-items: center;">
+    <main style="max-width: 1200px; margin: 0 auto; padding: 100px 20px;">
+        <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 80px; align-items: center;">
             <div class="reveal">
-                <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; margin-bottom: 20px;">Nuestra Misión</h2>
+                <h4 style="color: var(--primary); letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 15px;">Propósito</h4>
+                <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 3rem; margin-bottom: 25px;">Nuestra Misión</h2>
                 <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 20px;">
                     Nuestra misión es ofrecer a las mujeres prendas que no solo cumplan con sus estándares de modestia, sino que también las hagan sentir sofisticadas y seguras. Cada diseño es cuidadosamente seleccionado para garantizar calidad, comodidad y un estilo atemporal.
                 </p>
                 <p style="color: var(--text-muted); line-height: 1.8;">
-                    Creemos en una moda lenta, consciente y respetuosa, donde cada pieza tiene un propósito y está hecha para perdurar.
+                    Creemos en una moda lenta, consciente y respetuosa, donde cada pieza tiene un propósito y está hecha para perdurar en el tiempo, alejándonos de las tendencias efímeras.
                 </p>
             </div>
-            <div style="aspect-ratio: 1/1; overflow: hidden; box-shadow: var(--shadow-md);" class="reveal">
+            <div style="aspect-ratio: 1/1; overflow: hidden; box-shadow: var(--shadow-lg); position: relative;" class="reveal">
                 <img src="https://i.pinimg.com/736x/1d/2f/b2/1d2fb25a966caf9af84a4006483fc0fd.jpg" alt="Estilo Wihad Wear" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; top: 20px; right: 20px; width: 100%; height: 100%; border: 1px solid var(--primary); z-index: -1;"></div>
             </div>
         </section>
 
@@ -76,26 +79,41 @@
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
-                <h4>Wihad Wear</h4>
-                <p>Elevando la moda modesta a un nuevo estándar de elegancia.</p>
+                <h2 style="font-family: 'Cormorant Garamond', serif; color: var(--white); letter-spacing: 3px; margin-bottom: 25px;">WIHAD WEAR</h2>
+                <p style="margin-bottom: 25px;">Elevando la moda modesta a un nuevo estándar de elegancia y sofisticación.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#" style="font-size: 1.2rem; color: var(--white);">IG</a>
+                    <a href="#" style="font-size: 1.2rem; color: var(--white);">FB</a>
+                    <a href="#" style="font-size: 1.2rem; color: var(--white);">TK</a>
+                </div>
             </div>
             <div class="footer-col">
-                <h4>Enlaces</h4>
+                <h4>Colección</h4>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="productos.html">Colección</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="productos.html#vestidos">Vestidos & Abayas</a></li>
+                    <li><a href="productos.html#conjuntos">Conjuntos Elegantes</a></li>
+                    <li><a href="productos.html">Novedades</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Contacto</h4>
-                <p>Email: info@wihadwear.com</p>
-                <p>España</p>
+                <h4>Compañía</h4>
+                <ul>
+                    <li><a href="sobrenosotros.html">Nuestra Historia</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Suscríbete</h4>
+                <p style="font-size: 0.85rem; margin-bottom: 20px;">Recibe actualizaciones sobre nuevas colecciones y eventos exclusivos.</p>
+                <div style="display: flex; gap: 10px;">
+                    <input type="email" placeholder="Tu email" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 10px; color: white; width: 100%; outline: none;">
+                    <button style="background: var(--primary); border: none; color: white; padding: 10px 20px; cursor: pointer;">→</button>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Wihad Wear. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Wihad Wear. Diseñado para la elegancia modesta.</p>
         </div>
     </footer>
 
@@ -103,10 +121,24 @@
         // Theme Switcher Logic
         const themeSwitch = document.getElementById('theme-switch');
         const body = document.body;
+        const nav = document.querySelector('nav');
+
+        // Initial setup
+        window.addEventListener('load', reveal);
+
+        // Scroll logic for Nav
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+            reveal();
+        });
 
         if (localStorage.getItem('theme') === 'dark') {
             body.classList.add('dark-mode');
-            if(themeSwitch) themeSwitch.textContent = '☀️';
+            if(themeSwitch) themeSwitch.textContent = 'â˜€ï¸';
         }
 
         if(themeSwitch) {
@@ -114,7 +146,7 @@
                 body.classList.toggle('dark-mode');
                 const isDark = body.classList.contains('dark-mode');
                 localStorage.setItem('theme', isDark ? 'dark' : 'light');
-                themeSwitch.textContent = isDark ? '☀️' : '🌙';
+                themeSwitch.textContent = isDark ? 'â˜€ï¸' : 'ðŸŒ™';
             });
         }
 
@@ -140,8 +172,6 @@
                 }
             }
         }
-        window.addEventListener("scroll", reveal);
-        reveal();
     </script>
 </body>
 </html>
