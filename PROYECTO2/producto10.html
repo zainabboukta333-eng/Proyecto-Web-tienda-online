@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abaya elegante 2 piezas | Wihad Wear</title>
+    <title>Conjunto Ligero | Wihad Wear</title>
     <link rel="icon" href="imagenesPROYECTO/logo 2.jpg" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
@@ -31,22 +31,20 @@
         <a href="productos.html" style="text-decoration: none; color: var(--primary); display: inline-block; margin-bottom: 30px; font-weight: 500;">← Volver a la colección</a>
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 60px;" class="reveal">
-            <!-- Imagen del Producto -->
             <div style="position: sticky; top: 120px;">
                 <div style="aspect-ratio: 3/4; overflow: hidden; box-shadow: var(--shadow-md);">
-                    <img src="https://i.pinimg.com/736x/1d/2f/b2/1d2fb25a966caf9af84a4006483fc0fd.jpg" alt="Abaya elegante 2 piezas" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="https://i.pinimg.com/736x/15/eb/01/15eb013e0032c0d792dda6be5ca2c4cb.jpg" alt="Conjunto ligero y elegante" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
             </div>
 
-            <!-- Información del Producto -->
             <div style="padding: 20px 0;">
-                <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 3rem; margin-bottom: 10px;">Abaya elegante 2 piezas</h1>
-                <p style="font-size: 1.5rem; color: var(--primary); font-weight: 500; margin-bottom: 30px;">39,99 €</p>
+                <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 3rem; margin-bottom: 10px;">Conjunto ligero y elegante</h1>
+                <p style="font-size: 1.5rem; color: var(--primary); font-weight: 500; margin-bottom: 30px;">30,00 €</p>
                 
                 <div style="margin-bottom: 30px;">
                     <h3 style="font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">Descripción</h3>
                     <p style="color: var(--text-muted); line-height: 1.8;">
-                        Esta abaya de dos piezas combina elegancia y comodidad. Su tela fluida y su diseño moderno la convierten en una prenda ideal para eventos, cenas o el día a día con estilo. Diseñada para ofrecer una caída perfecta y máxima discreción.
+                        La máxima expresión de la comodidad sin renunciar a la sofisticación. Este conjunto ligero ha sido diseñado pensando en la mujer moderna que necesita versatilidad y elegancia en su día a día. Sus líneas limpias y su tejido de alta calidad garantizan un look impecable.
                     </p>
                 </div>
 
@@ -97,77 +95,23 @@
     </footer>
 
     <style>
-        .talla-btn {
-            padding: 10px 20px;
-            border: 1px solid #ddd;
-            background: white;
-            cursor: pointer;
-            transition: 0.3s;
-            font-family: 'Poppins', sans-serif;
-            min-width: 60px;
-        }
-        .talla-btn:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-        }
-        .talla-btn.active {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-        }
+        .talla-btn { padding: 10px 20px; border: 1px solid #ddd; background: white; cursor: pointer; transition: 0.3s; font-family: 'Poppins', sans-serif; min-width: 60px; }
+        .talla-btn:hover { border-color: var(--primary); color: var(--primary); }
+        .talla-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
     </style>
 
     <script>
-        // Theme Switcher Logic
         const themeSwitch = document.getElementById("theme-switch");
         const body = document.body;
-
-        if (localStorage.getItem("theme") === "dark") {
-            body.classList.add("dark-mode");
-            if(themeSwitch) themeSwitch.textContent = "☀️";
-        }
-
-        if(themeSwitch) {
-            themeSwitch.addEventListener("click", () => {
-                body.classList.toggle("dark-mode");
-                const isDark = body.classList.contains("dark-mode");
-                localStorage.setItem("theme", isDark ? "dark" : "light");
-                themeSwitch.textContent = isDark ? "☀️" : "🌙";
-            });
-        }
-
-        // Mobile Menu Toggle
+        if (localStorage.getItem("theme") === "dark") { body.classList.add("dark-mode"); if(themeSwitch) themeSwitch.textContent = "☀️"; }
+        if(themeSwitch) { themeSwitch.addEventListener("click", () => { body.classList.toggle("dark-mode"); const isDark = body.classList.contains("dark-mode"); localStorage.setItem("theme", isDark ? "dark" : "light"); themeSwitch.textContent = isDark ? "☀️" : "🌙"; }); }
         const menuToggle = document.getElementById("mobile-menu");
         const menu = document.querySelector(".menu");
-
-        if(menuToggle) {
-            menuToggle.addEventListener("click", () => {
-                menuToggle.classList.toggle("active");
-                menu.classList.toggle("active");
-            });
-        }
-
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 100;
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                }
-            }
-        }
-        window.addEventListener("scroll", reveal);
-        reveal();
-
+        if(menuToggle) { menuToggle.addEventListener("click", () => { menuToggle.classList.toggle("active"); menu.classList.toggle("active"); }); }
+        function reveal() { var reveals = document.querySelectorAll(".reveal"); for (var i = 0; i < reveals.length; i++) { var windowHeight = window.innerHeight; var elementTop = reveals[i].getBoundingClientRect().top; if (elementTop < windowHeight - 100) reveals[i].classList.add("active"); } }
+        window.addEventListener("scroll", reveal); reveal();
         const buttons = document.querySelectorAll(".talla-btn");
-        buttons.forEach(btn => {
-            btn.addEventListener("click", () => {
-                buttons.forEach(b => b.classList.remove("active"));
-                btn.classList.add("active");
-            });
-        });
+        buttons.forEach(btn => btn.addEventListener("click", () => { buttons.forEach(b => b.classList.remove("active")); btn.classList.add("active"); }));
     </script>
 </body>
 </html>
