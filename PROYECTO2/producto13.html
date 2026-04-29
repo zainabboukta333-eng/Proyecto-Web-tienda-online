@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestido de Fiesta Gala | Wihad Wear</title>
+    <link rel="icon" href="imagenesPROYECTO/logo 2.jpg" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">WIHAD WEAR</a>
+        <div style="display: flex; align-items: center;">
+            <button id="theme-switch" class="theme-toggle" title="Cambiar modo">🌙</button>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobrenosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main style="max-width: 1200px; margin: 40px auto; padding: 0 8%;">
+        <a href="productos.html" style="text-decoration: none; color: var(--primary); display: inline-block; margin-bottom: 30px; font-weight: 500;">← Volver a la colección</a>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 60px;" class="reveal">
+            <div style="position: sticky; top: 120px;">
+                <div style="aspect-ratio: 3/4; overflow: hidden; box-shadow: var(--shadow-md);">
+                    <img src="imagenesPROYECTO/producto13.png" alt="Vestido de Fiesta Gala" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+
+            <div style="padding: 20px 0;">
+                <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 3rem; margin-bottom: 10px;">Vestido de Fiesta Gala</h1>
+                <p style="font-size: 1.5rem; color: var(--primary); font-weight: 500; margin-bottom: 30px;">110,00 €</p>
+                
+                <div style="margin-bottom: 30px;">
+                    <h3 style="font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">Descripción</h3>
+                    <p style="color: var(--text-muted); line-height: 1.8;">
+                        Un diseño majestuoso para las noches inolvidables. Este vestido de fiesta combina una falda fluida con un escote sofisticado y modesto. Disponible en suaves colores pastel, ha sido creado para ofrecer una silueta elegante y refinada, garantizando que seas el centro de todas las miradas con la máxima discreción.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 40px;">
+                    <h3 style="font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">Selecciona tu talla</h3>
+                    <div style="display: flex; gap: 15px;">
+                        <button class="talla-btn">S</button>
+                        <button class="talla-btn">M</button>
+                        <button class="talla-btn">L</button>
+                        <button class="talla-btn">XL</button>
+                    </div>
+                </div>
+
+                <button class="btn-premium" style="width: 100%; border: none; cursor: pointer; padding: 20px;">Añadir al Carrito</button>
+                
+                <div style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px;">
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">✓ Envío premium gratuito</p>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">✓ Devoluciones gratuitas en 15 días</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Wihad Wear</h4>
+                <p>Elevando la moda modesta a un nuevo estándar de elegancia.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="productos.html">Colección</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>Email: info@wihadwear.com</p>
+                <p>España</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wihad Wear. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <style>
+        .talla-btn { padding: 10px 20px; border: 1px solid #ddd; background: white; cursor: pointer; transition: 0.3s; font-family: 'Poppins', sans-serif; min-width: 60px; }
+        .talla-btn:hover { border-color: var(--primary); color: var(--primary); }
+        .talla-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+    </style>
+
+    <script>
+        const themeSwitch = document.getElementById("theme-switch");
+        const body = document.body;
+        if (localStorage.getItem("theme") === "dark") { body.classList.add("dark-mode"); if(themeSwitch) themeSwitch.textContent = "☀️"; }
+        if(themeSwitch) { themeSwitch.addEventListener("click", () => { body.classList.toggle("dark-mode"); const isDark = body.classList.contains("dark-mode"); localStorage.setItem("theme", isDark ? "dark" : "light"); themeSwitch.textContent = isDark ? "☀️" : "🌙"; }); }
+        const menuToggle = document.getElementById("mobile-menu");
+        const menu = document.querySelector(".menu");
+        if(menuToggle) { menuToggle.addEventListener("click", () => { menuToggle.classList.toggle("active"); menu.classList.toggle("active"); }); }
+        function reveal() { var reveals = document.querySelectorAll(".reveal"); for (var i = 0; i < reveals.length; i++) { var windowHeight = window.innerHeight; var elementTop = reveals[i].getBoundingClientRect().top; if (elementTop < windowHeight - 100) reveals[i].classList.add("active"); } }
+        window.addEventListener("scroll", reveal); reveal();
+        const buttons = document.querySelectorAll(".talla-btn");
+        buttons.forEach(btn => btn.addEventListener("click", () => { buttons.forEach(b => b.classList.remove("active")); btn.classList.add("active"); }));
+    </script>
+</body>
+</html>
